@@ -323,8 +323,8 @@ class Interface extends React.Component {
                                 <p>
                                     <FormattedMessage
                                         // eslint-disable-next-line max-len
-                                        defaultMessage="{APP_NAME} is a TurboWarp mod with many changes that builds upon and enhances TurboWarp with many useful features. We do not guarantee projects made here will be backwards compatible with Scratch or TurboWarp."
-                                        description="Description of NitroBolt on the homepage"
+                                        defaultMessage="{APP_NAME} is a NitroBolt and TurboWarp mod with many changes that builds upon and enhances NitroBolt with many useful features. We do not guarantee projects made here will be backwards compatible with Scratch or TurboWarp."
+                                        description="Description of SpinachMod on the homepage"
                                         id="tw.home.description"
                                         values={{
                                             APP_NAME
