@@ -47,7 +47,7 @@ import styles from './interface.css';
 
 const messages = defineMessages({
     defaultTitle: {
-        defaultMessage: 'Beyond Limitations', // TODO: Temporary?
+        defaultMessage: 'The World of Fun and Games!', // TODO: Temporary?
         description: 'Title of homepage',
         id: 'tw.guiDefaultTitle'
     }
@@ -164,7 +164,7 @@ const Footer = () => (
                             id="tw.feedback"
                         />
                     </a>
-                    <a href="https://github.com/Nitro-Bolt/">
+                    <a href="https://github.com/SpinachMod/">
                         <FormattedMessage
                             defaultMessage="Source Code"
                             description="Link to source code"
