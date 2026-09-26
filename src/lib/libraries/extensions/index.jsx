@@ -445,7 +445,7 @@ const gallerySourceDisplay = {
         name: 'Bilup Extension Gallery',
         href: 'https://extensions.bilup.org/',
         iconURL: galleryIconBilup,
-        tag: 'pot'
+        tag: 'bilup'
     },
     nitrobolt: {
         name: 'NitroBolt Extension Gallery',
