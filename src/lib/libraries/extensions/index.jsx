@@ -55,6 +55,8 @@ import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 import nbIcon from './nb/nb.svg';
 import smIcon from './sm/sm.svg';
 import customExtensionIcon from './custom/custom.svg';
+import galleryIconPOT from './gallery/gallery-pot.svg';
+import galleryIconBilup from './gallery/gallery-bilup.svg';
 import galleryIconNB from './gallery/gallery-nb.svg';
 import galleryIconTW from './gallery/gallery-tw.svg';
 import {APP_NAME} from '../../brand';
@@ -433,6 +435,18 @@ export default [
 ];
 
 const gallerySourceDisplay = {
+    potentiamod: {
+        name: 'PotentiaMod Extension Bonanza',
+        href: 'https://potentiamod.github.io/extensions/',
+        iconURL: galleryIconPOT,
+        tag: 'pot'
+    },
+    bilup: {
+        name: 'Bilup Extension Gallery',
+        href: 'https://extensions.bilup.org/',
+        iconURL: galleryIconBilup,
+        tag: 'pot'
+    },
     nitrobolt: {
         name: 'NitroBolt Extension Gallery',
         href: 'https://extensions.nitrobolt.org/',
@@ -461,6 +475,16 @@ const createGalleryStatusItem = (sourceId, description) => {
 };
 
 export const galleryStatusItems = {
+    potentiamod: {
+        loading: createGalleryStatusItem('potentiamod', 'Loading PotentiaMod extension gallery...'),
+        more: createGalleryStatusItem('potentiamod', 'Learn more about extensions at potentiamod.github.io/extensions.'),
+        error: createGalleryStatusItem('potentiamod', 'Error loading PotentiaMod extension gallery. Visit potentiamod.github.io/extensions to find more extensions.')
+    },
+    bilup: {
+        loading: createGalleryStatusItem('bilup', 'Loading NitroBolt extension gallery...'),
+        more: createGalleryStatusItem('bilup', 'Learn more about extensions at extensions.bilup.org.'),
+        error: createGalleryStatusItem('bilup', 'Error loading NitroBolt extension gallery. Visit extensions.bilup.org to find more extensions.')
+    },
     nitrobolt: {
         loading: createGalleryStatusItem('nitrobolt', 'Loading NitroBolt extension gallery...'),
         more: createGalleryStatusItem('nitrobolt', 'Learn more about extensions at extensions.nitrobolt.org.'),
