@@ -3,6 +3,8 @@ import defaultsDeep from 'lodash.defaultsdeep';
 import * as accentPurple from './accent/purple';
 import * as accentBlue from './accent/blue';
 import * as accentRed from './accent/red';
+import * as accentGreen from './accent/green';
+import * as accentMagenta from './accent/magenta';
 import * as accentOrange from './accent/orange';
 import * as accentRainbow from './accent/rainbow';
 import * as accentCustom from './accent/custom';
@@ -17,6 +19,8 @@ import * as blocksDark from './blocks/dark';
 const ACCENT_PURPLE = 'purple';
 const ACCENT_BLUE = 'blue';
 const ACCENT_RED = 'red';
+const ACCENT_GREEN = 'green';
+const ACCENT_MAGENTA = 'magenta';
 const ACCENT_ORANGE = 'orange';
 const ACCENT_RAINBOW = 'rainbow';
 const ACCENT_CUSTOM = 'custom';
@@ -25,10 +29,12 @@ const ACCENT_MAP = {
     [ACCENT_BLUE]: accentBlue,
     [ACCENT_RED]: accentRed,
     [ACCENT_ORANGE]: accentOrange,
+    [ACCENT_GREEN]: accentGreen,
+    [ACCENT_MAGENTA]: accentMagenta,
     [ACCENT_RAINBOW]: accentRainbow,
     [ACCENT_CUSTOM]: accentCustom
 };
-const ACCENT_DEFAULT = ACCENT_ORANGE;
+const ACCENT_DEFAULT = ACCENT_GREEN;
 
 const GUI_LIGHT = 'light';
 const GUI_DARK = 'dark';
@@ -166,6 +172,8 @@ export {
     defaultBlockColors,
 
     ACCENT_ORANGE,
+    ACCENT_GREEN,
+    ACCENT_MAGENTA,
     ACCENT_RED,
     ACCENT_PURPLE,
     ACCENT_BLUE,
