@@ -53,6 +53,7 @@ import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
 import nbIcon from './nb/nb.svg';
+import smIcon from './sm/sm.svg';
 import customExtensionIcon from './custom/custom.svg';
 import galleryIconNB from './gallery/gallery-nb.svg';
 import galleryIconTW from './gallery/gallery-tw.svg';
@@ -388,7 +389,7 @@ export default [
         name: (
             <FormattedMessage
                 defaultMessage="{APP_NAME} Blocks"
-                description="Name of the strange 'NitroBolt Blocks' extension"
+                description="Name of the strange 'SpinachMod Blocks' extension"
                 id="tw.twExtension.name"
                 values={{
                     APP_NAME
@@ -396,16 +397,16 @@ export default [
             />
         ),
         extensionId: 'tw',
-        iconURL: nbIcon,
+        iconURL: smIcon,
         description: (
             <FormattedMessage
                 defaultMessage="Weird new blocks."
-                description="Description of the strange 'NitroBolt Blocks' extension"
+                description="Description of the strange 'SpinachMod Blocks' extension"
                 id="tw.twExtension.description"
             />
         ),
         incompatibleWithScratch: true,
-        tags: ['nb'],
+        tags: ['sm'],
         featured: true
     },
     {
@@ -425,7 +426,7 @@ export default [
                 id="tw.customExtension.description"
             />
         ),
-        tags: ['nb', 'tw'],
+        tags: ['sm', 'tw'],
         featured: true
         // Not marked as incompatible with Scratch so that clicking on it doesn't show a prompt
     }
