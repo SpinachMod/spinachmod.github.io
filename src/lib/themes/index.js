@@ -6,6 +6,7 @@ import * as accentRed from './accent/red';
 import * as accentGreen from './accent/green';
 import * as accentMagenta from './accent/magenta';
 import * as accentOrange from './accent/orange';
+import * as accentYellow from './accent/yellow';
 import * as accentRainbow from './accent/rainbow';
 import * as accentCustom from './accent/custom';
 
@@ -20,6 +21,7 @@ const ACCENT_PURPLE = 'purple';
 const ACCENT_BLUE = 'blue';
 const ACCENT_RED = 'red';
 const ACCENT_GREEN = 'green';
+const ACCENT_YELLOW = 'yellow';
 const ACCENT_MAGENTA = 'magenta';
 const ACCENT_ORANGE = 'orange';
 const ACCENT_RAINBOW = 'rainbow';
@@ -31,6 +33,7 @@ const ACCENT_MAP = {
     [ACCENT_ORANGE]: accentOrange,
     [ACCENT_GREEN]: accentGreen,
     [ACCENT_MAGENTA]: accentMagenta,
+    [ACCENT_YELLOW]: accentYellow,
     [ACCENT_RAINBOW]: accentRainbow,
     [ACCENT_CUSTOM]: accentCustom
 };
@@ -173,6 +176,7 @@ export {
 
     ACCENT_ORANGE,
     ACCENT_GREEN,
+    ACCENT_YELLOW,
     ACCENT_MAGENTA,
     ACCENT_RED,
     ACCENT_PURPLE,
