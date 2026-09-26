@@ -10,6 +10,9 @@ import {gradientDataToCSS} from '../../lib/nb-gradient-to-css.js';
 import {openCustomAccentModal} from '../../reducers/modals.js';
 import {MenuItem, MenuSection, Submenu} from '../menu/menu.jsx';
 import {
+    ACCENT_GREEN,
+    ACCENT_MAGENTA,
+    ACCENT_YELLOW,
     ACCENT_ORANGE,
     ACCENT_RED,
     ACCENT_PURPLE,
@@ -27,9 +30,24 @@ import styles from './settings-menu.css';
 import settingsIcon from '../menu-bar/icon--settings.svg';
 
 const options = defineMessages({
+    [ACCENT_GREEN]: {
+        defaultMessage: 'Green',
+        description: 'Name of the orange color scheme, used by SpinachMod by default.',
+        id: 'tw.accent.green'
+    },
+    [ACCENT_MAGENTA]: {
+        defaultMessage: 'Magenta',
+        description: 'Name of the magenta color scheme.',
+        id: 'tw.accent.magenta'
+    },
+    [ACCENT_YELLOW]: {
+        defaultMessage: 'Yellow',
+        description: 'Name of the yellow color scheme.',
+        id: 'tw.accent.yellow'
+    },
     [ACCENT_ORANGE]: {
         defaultMessage: 'Orange',
-        description: 'Name of the orange color scheme, used by NitroBolt by default.',
+        description: 'Name of the orange color scheme, matching NitroBolt\'s color.',
         id: 'tw.accent.orange'
     },
     [ACCENT_RED]: {
