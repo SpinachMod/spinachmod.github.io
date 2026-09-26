@@ -207,8 +207,8 @@ importers:
         specifier: github:Nitro-Bolt/scratch-render#develop
         version: https://codeload.github.com/Nitro-Bolt/scratch-render/tar.gz/f952f4d387badabed2ea9491b1e033e2741540e9(webpack@4.47.0)
       scratch-vm:
-        specifier: github:Nitro-Bolt/scratch-vm#develop
-        version: https://codeload.github.com/Nitro-Bolt/scratch-vm/tar.gz/c5f097883d40c2ce9ff5fd20e14c8aa201979733(@turbowarp/scratch-svg-renderer@1.1.0(scratch-render-fonts@https://codeload.github.com/TurboWarp/scratch-render-fonts/tar.gz/7b6768fc6dfef6b343a06f992587b74807043961))(webpack@4.47.0)
+        specifier: github:SpinachMod/scratch-vm#develop
+        version: https://codeload.github.com/SpinachMod/scratch-vm/tar.gz/c5f097883d40c2ce9ff5fd20e14c8aa201979733(@turbowarp/scratch-svg-renderer@1.1.0(scratch-render-fonts@https://codeload.github.com/TurboWarp/scratch-render-fonts/tar.gz/7b6768fc6dfef6b343a06f992587b74807043961))(webpack@4.47.0)
       style-loader:
         specifier: ^0.23.0
         version: 0.23.1
