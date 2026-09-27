@@ -87,7 +87,7 @@ const Footer = () => (
                 <FormattedMessage
                     // eslint-disable-next-line max-len
                     defaultMessage="{APP_NAME} is not affiliated with Scratch, the Scratch Team, or the Scratch Foundation."
-                    description="Disclaimer that NitroBolt is not connected to Scratch"
+                    description="Disclaimer that SpinachMod is not connected to Scratch"
                     id="tw.footer.disclaimer"
                     values={{
                         APP_NAME
@@ -130,9 +130,9 @@ const Footer = () => (
                         {/* Do not translate */}
                         {'NitroBolt Desktop'}
                     </a>
-                    <a href="https://packager.nitrobolt.org/">
+                    <a href="https://spinachmod.github.io/packager/">
                         {/* Do not translate */}
-                        {'NitroBolt Packager'}
+                        {'SpinachMod Packager'}
                     </a>
                     <a href="https://docs.nitrobolt.org/website/embedding">
                         <FormattedMessage
@@ -157,7 +157,7 @@ const Footer = () => (
                     </a>
                 </div>
                 <div className={styles.footerSection}>
-                    <a href="https://scratch.mit.edu/users/CubesterYT/#comments">
+                    <a href="https://www.facebook.com/CrystalMae1990">
                         <FormattedMessage
                             defaultMessage="Feedback & Bugs"
                             description="Link to feedback/bugs page"
