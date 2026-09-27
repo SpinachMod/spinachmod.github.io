@@ -59,6 +59,7 @@ import nbIcon from './nb/nb.svg';
 import smIcon from './sm/sm.svg';
 import customExtensionIcon from './custom/custom.svg';
 import galleryIconPOT from './gallery/gallery-pot.svg';
+import galleryIconGM from './gallery/gallery-gm.png';
 import galleryIconBilup from './gallery/gallery-bilup.svg';
 import galleryIconNB from './gallery/gallery-nb.svg';
 import galleryIconTW from './gallery/gallery-tw.svg';
@@ -483,6 +484,12 @@ const gallerySourceDisplay = {
         iconURL: galleryIconPOT,
         tag: 'pot'
     },
+    gaiamod: {
+        name: 'GaiaMod Extension Gallery',
+        href: 'https://gaiawindwave90.github.io/gm-extensions/',
+        iconURL: galleryIconGM,
+        tag: 'gm'
+    },
     bilup: {
         name: 'Bilup Extension Gallery',
         href: 'https://extensions.bilup.org/',
@@ -521,6 +528,11 @@ export const galleryStatusItems = {
         loading: createGalleryStatusItem('potentiamod', 'Loading PotentiaMod extension gallery...'),
         more: createGalleryStatusItem('potentiamod', 'Learn more about extensions at potentiamod.github.io/extensions.'),
         error: createGalleryStatusItem('potentiamod', 'Error loading PotentiaMod extension gallery. Visit potentiamod.github.io/extensions to find more extensions.')
+    },
+	gaiamod: {
+        loading: createGalleryStatusItem('gaiamod', 'Loading GaiaMod extension gallery...'),
+        more: createGalleryStatusItem('gaiamod', 'Learn more about extensions at gaiawindwave90.github.io/gm-extensions.'),
+        error: createGalleryStatusItem('gaiamod', 'Error loading GaiaMod extension gallery. Visit gaiawindwave90.github.io/gm-extensions to find more extensions.')
     },
     bilup: {
         loading: createGalleryStatusItem('bilup', 'Loading NitroBolt extension gallery...'),
