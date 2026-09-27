@@ -52,6 +52,9 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import wirelessIconURL from './wireless.png'; //Taken from CodeCraft
+import jgScratchAuthExtensionIcon from './scratchauth2.svg';
+
 import nbIcon from './nb/nb.svg';
 import smIcon from './sm/sm.svg';
 import customExtensionIcon from './custom/custom.svg';
@@ -62,6 +65,66 @@ import galleryIconTW from './gallery/gallery-tw.svg';
 import {APP_NAME} from '../../brand';
 
 export default [
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Wireless"
+                description="Name for the Wireless extension"
+                id="gui.extension.wireless.name"
+            />
+        ),
+        extensionId: 'scratch3Wireless',
+        iconURL: wirelessIconURL, //Taken from CodeCraft
+        description: (
+            <FormattedMessage
+                defaultMessage="Communicate with wireless."
+                description="Description for the Wireless extension"
+                id="gui.extension.camera.description"
+            />
+        ),
+        tags: ['sm'],
+        featured: true
+    },
+    {
+        name: 'Scratch Authentication',
+        extensionId: 'jgScratchAuth',
+        iconURL: jgScratchAuthExtensionIcon,
+		collaborator: 'PenguinMod',
+		tags: ['sm'],
+        description: "Interact with Scratch Authentication to prove the player is a real scratch user.",
+        featured: true
+    },
+    {
+        name: 'Ada Browser',
+        tags: ['sm'],
+        extensionId: 'adabrowser',
+        iconURL: 'https://www.adacraft.org/studio/static/assets/40998229311219c2117265d5e4bd9745.png',
+        insetIconURL: 'https://www.adacraft.org/studio/static/assets/f1fe0bbe960a0d60c783b111c84b837e.svg',
+        description: 'Some new blocks to interact with the browser',
+        collaborator: 'Adacraft',
+        featured: true
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Camera"
+                description="Name for the Camera extension"
+                id="gui.extension.camera.name"
+            />
+        ),
+        extensionId: 'camera',
+        iconURL: cameraIconURL,
+        insetIconURL: cameraInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Move around the viewport of the stage."
+                description="Description for the Camera extension"
+                id="gui.extension.camera.description"
+            />
+        ),
+        tags: ['nb'],
+        featured: true
+    },
     {
         name: (
             <FormattedMessage
@@ -102,27 +165,6 @@ export default [
             />
         ),
         tags: ['scratch'],
-        featured: true
-    },
-    {
-        name: (
-            <FormattedMessage
-                defaultMessage="Camera"
-                description="Name for the Camera extension"
-                id="gui.extension.camera.name"
-            />
-        ),
-        extensionId: 'camera',
-        iconURL: cameraIconURL,
-        insetIconURL: cameraInsetIconURL,
-        description: (
-            <FormattedMessage
-                defaultMessage="Move around the viewport of the stage."
-                description="Description for the Camera extension"
-                id="gui.extension.camera.description"
-            />
-        ),
-        tags: ['nb'],
         featured: true
     },
     {
