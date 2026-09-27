@@ -79,7 +79,7 @@ export default [
             <FormattedMessage
                 defaultMessage="Communicate with wireless."
                 description="Description for the Wireless extension"
-                id="gui.extension.camera.description"
+                id="gui.extension.wireless.description"
             />
         ),
         tags: ['sm'],
