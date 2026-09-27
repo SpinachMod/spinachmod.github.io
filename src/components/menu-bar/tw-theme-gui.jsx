@@ -10,7 +10,7 @@ import {MenuItem, MenuSection, Submenu} from '../menu/menu.jsx';
 import {
     GUI_LIGHT,
     GUI_DARK,
-    GUI_MIDIGHT,
+    GUI_MIDNIGHT,
     GUI_MAP,
     Theme
 } from '../../lib/themes/index.js';
