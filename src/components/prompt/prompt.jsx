@@ -49,12 +49,12 @@ const messages = defineMessages({
 
 const Packager = () => (
     <a
-        href="https://packager.nitrobolt.org"
+        href="https://spinachmod.github.io/packager/"
         target="_blank"
         rel="noopener noreferrer"
     >
         {/* Should not be translated */}
-        {'NitroBolt Packager'}
+        {'SpinachMod Packager'}
     </a>
 );
 
