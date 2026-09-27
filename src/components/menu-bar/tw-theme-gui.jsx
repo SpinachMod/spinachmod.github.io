@@ -1,4 +1,3 @@
-//Stolen from PenguinMod-Port
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -7,11 +6,20 @@ import {connect} from 'react-redux';
 
 import check from './check.svg';
 import dropdownCaret from './dropdown-caret.svg';
-import {MenuItem, Submenu} from '../menu/menu.jsx';
-import {GUI_LIGHT, GUI_DARK, GUI_MIDNIGHT, GUI_MAP, Theme} from '../../lib/themes/index.js';
+import {MenuItem, MenuSection, Submenu} from '../menu/menu.jsx';
+import {
+    GUI_LIGHT,
+    GUI_DARK,
+    GUI_MIDIGHT,
+    GUI_MAP,
+    Theme
+} from '../../lib/themes/index.js';
 import {openGuiMenu, guiMenuOpen, closeSettingsMenu} from '../../reducers/menus.js';
 import {setTheme} from '../../reducers/theme.js';
 import {persistTheme} from '../../lib/themes/themePersistance.js';
+import lightModeIcon from './tw-sun.svg';
+import darkModeIcon from './tw-moon.svg';
+import midnightModeIcon from './tw-star.svg';
 import styles from './settings-menu.css';
 
 const options = defineMessages({
@@ -32,7 +40,7 @@ const options = defineMessages({
     },
 });
 
-const ColorIcon = props => (
+const ThemeIcon = props => (
     <div
         className={styles.accentIconOuter}
         style={{
@@ -41,11 +49,11 @@ const ColorIcon = props => (
     />
 );
 
-ColorIcon.propTypes = {
+ThemeIcon.propTypes = {
     id: PropTypes.string
 };
 
-const AccentMenuItem = props => (
+const GuiMenuItem = props => (
     <MenuItem onClick={props.onClick}>
         <div className={styles.option}>
             <img
@@ -55,59 +63,65 @@ const AccentMenuItem = props => (
                 src={check}
                 draggable={false}
             />
-            <ColorIcon id={props.id} />
+            <ThemeIcon id={props.id} />
             <FormattedMessage {...options[props.id]} />
         </div>
     </MenuItem>
 );
 
-AccentMenuItem.propTypes = {
+GuiMenuItem.propTypes = {
     id: PropTypes.string,
     isSelected: PropTypes.bool,
     onClick: PropTypes.func
 };
 
-const AccentThemeMenu = ({
+const GuiThemeMenu = ({
     isOpen,
     isRtl,
     onChangeTheme,
+    onOpenCustomSettings,
     onOpen,
-    theme
+    theme,
 }) => (
-    <MenuItem expanded={isOpen}>
+<MenuItem expanded={isOpen}>
         <div
             className={styles.option}
             onClick={onOpen}
         >
-            <ColorIcon id={theme.gui} />
+            <ThemeIcon
+                    id={theme.gui}
+                />
             <span className={styles.submenuLabel}>
                 <FormattedMessage
                     defaultMessage="Theme"
-                    description="Theme (light, dark, etc)"
-                    id="pm.menuBar.gui"
+                    description="Label for menu to choose theme"
+                    id="tw.menuBar.theme"
                 />
             </span>
             <img
-                className={styles.expandCaret}
-                src={dropdownCaret}
-                draggable={false}
-            />
-        </div>
-        <Submenu place={isRtl ? 'left' : 'right'}>
-            {Object.keys(options).map(item => (
-                <AccentMenuItem
-                    key={item}
-                    id={item}
-                    isSelected={theme.gui === item}
-                    // eslint-disable-next-line react/jsx-no-bind
-                    onClick={() => onChangeTheme(theme.set('gui', item))}
+                    className={styles.expandCaret}
+                    src={dropdownCaret}
+                    draggable={false}
                 />
-            ))}
+        </div>
+        <Submenu
+            place={isRtl ? 'left' : 'right'}
+            className={styles.guiSubmenu}
+        >
+            {Object.keys(options).map(item => (
+                    <GuiMenuItem
+                        key={item}
+                        id={item}
+                        isSelected={theme.gui === item}
+                        // eslint-disable-next-line react/jsx-no-bind
+                        onClick={() => onChangeTheme(theme.set('gui', item))}
+                    />
+                ))}
         </Submenu>
     </MenuItem>
 );
 
-AccentThemeMenu.propTypes = {
+GuiThemeMenu.propTypes = {
     isOpen: PropTypes.bool,
     isRtl: PropTypes.bool,
     onChangeTheme: PropTypes.func,
@@ -133,4 +147,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(AccentThemeMenu);
+)(GuiThemeMenu);
