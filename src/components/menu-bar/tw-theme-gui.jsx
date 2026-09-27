@@ -1,3 +1,4 @@
+//Stolen from PenguinMod-Port
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -6,21 +7,12 @@ import {connect} from 'react-redux';
 
 import check from './check.svg';
 import dropdownCaret from './dropdown-caret.svg';
-import {gradientDataToCSS} from '../../lib/nb-gradient-to-css.js';
-import {openCustomAccentModal} from '../../reducers/modals.js';
-import {MenuItem, MenuSection, Submenu} from '../menu/menu.jsx';
-import {
-    GUI_LIGHT,
-    GUI_DARK,
-    GUI_MIDNIGHT,
-    GUI_MAP,
-    Theme
-} from '../../lib/themes/index.js';
+import {MenuItem, Submenu} from '../menu/menu.jsx';
+import {GUI_LIGHT, GUI_DARK, GUI_MIDNIGHT, GUI_MAP, Theme} from '../../lib/themes/index.js';
 import {openGuiMenu, guiMenuOpen, closeSettingsMenu} from '../../reducers/menus.js';
 import {setTheme} from '../../reducers/theme.js';
 import {persistTheme} from '../../lib/themes/themePersistance.js';
 import styles from './settings-menu.css';
-import settingsIcon from '../menu-bar/icon--settings.svg';
 
 const options = defineMessages({
     [GUI_LIGHT]: {
@@ -36,7 +28,7 @@ const options = defineMessages({
     [GUI_MIDNIGHT]: {
         defaultMessage: 'Midnight',
         description: 'Midnight mode.',
-        id: 'tw.guicolor.amoled'
+        id: 'tw.guicolor.midnight'
     },
 });
 
@@ -52,7 +44,6 @@ const ColorIcon = props => (
 ColorIcon.propTypes = {
     id: PropTypes.string
 };
-
 
 const AccentMenuItem = props => (
     <MenuItem onClick={props.onClick}>
@@ -93,7 +84,7 @@ const AccentThemeMenu = ({
                 <FormattedMessage
                     defaultMessage="Theme"
                     description="Theme (light, dark, etc)"
-                    id="tw.menuBar.gui"
+                    id="pm.menuBar.gui"
                 />
             </span>
             <img
@@ -119,7 +110,6 @@ const AccentThemeMenu = ({
 AccentThemeMenu.propTypes = {
     isOpen: PropTypes.bool,
     isRtl: PropTypes.bool,
-    onClickCustomAccent: PropTypes.func,
     onChangeTheme: PropTypes.func,
     onOpen: PropTypes.func,
     theme: PropTypes.instanceOf(Theme)
