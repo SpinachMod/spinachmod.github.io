@@ -199,7 +199,7 @@ export {
     accentMenuOpen,
 	openGuiMenu,
     closeGuiMenu,
-    GuiMenuOpen,
+    guiMenuOpen,
     openBlocksThemeMenu,
     closeBlocksThemeMenu,
     blocksThemeMenuOpen,
