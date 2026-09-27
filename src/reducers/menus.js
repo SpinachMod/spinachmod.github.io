@@ -157,7 +157,7 @@ const accentMenuOpen = state => state.scratchGui.menus[MENU_ACCENT];
 
 const openGuiMenu = () => openMenu(MENU_GUI);
 const closeGuiMenu = () => closeMenu(MENU_GUI);
-const GuiMenuOpen = state => state.scratchGui.menus[MENU_GUI];
+const guiMenuOpen = state => state.scratchGui.menus[MENU_GUI];
 
 const openBlocksThemeMenu = () => openMenu(MENU_BLOCKS_THEME);
 const closeBlocksThemeMenu = () => closeMenu(MENU_BLOCKS_THEME);
