@@ -37,6 +37,12 @@ const gallerySources = [
         tag: 'pot'
     },
     {
+        id: 'gaiamod',
+        baseURL: 'https://gaiawindwave90.github.io/gm-extensions/',
+        metadataURL: 'https://gaiawindwave90.github.io/gm-extensions/generated-metadata/extensions-v0.json',
+        tag: 'gm'
+    },
+    {
         id: 'bilup',
         baseURL: 'https://extensions.bilup.org/',
         metadataURL: 'https://extensions.bilup.org/generated-metadata/extensions-v0.json',
