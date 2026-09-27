@@ -19,7 +19,6 @@ import {setTheme} from '../../reducers/theme.js';
 import {persistTheme} from '../../lib/themes/themePersistance.js';
 import lightModeIcon from './tw-sun.svg';
 import darkModeIcon from './tw-moon.svg';
-import midnightModeIcon from './tw-star.svg';
 import styles from './settings-menu.css';
 
 const options = defineMessages({
