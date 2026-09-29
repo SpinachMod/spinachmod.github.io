@@ -98,7 +98,7 @@ class ExtensionPackManager extends React.Component {
                                 rel="noreferrer"
                                 target="_blank"
                             >
-                                packs.nitrobolt.org
+                                potentiamod.github.io/extensions/ext-packs.html
                             </a>
                             , or ask your favorite extension gallery to support the{' '}
                             <a
