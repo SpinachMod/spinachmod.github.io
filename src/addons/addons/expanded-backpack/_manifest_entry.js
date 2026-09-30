@@ -18,8 +18,8 @@ const manifest = {
       "id": "rows",
       "type": "integer",
       "min": 1,
-      "max": 4,
-      "default": 2
+      "max": 6,
+      "default": 4
     },
     {
       "dynamic": true,
@@ -38,8 +38,8 @@ const manifest = {
           "type": "settingValue",
           "settingId": "upscale"
         },
-        "true": "95%",
-        "false": "32px"
+        "true": "105%",
+        "false": "40px"
       }
     },
     {
@@ -65,6 +65,6 @@ const manifest = {
       "url": "userscript.js"
     }
   ],
-  "dynamicDisable": true
+  "dynamicDisable": false
 };
 export default manifest;

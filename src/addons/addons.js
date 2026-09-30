@@ -74,6 +74,7 @@ const addons = [
 ];
 
 const newAddons = [
+    'background',
     'expanded-backpack'
 ];
 
