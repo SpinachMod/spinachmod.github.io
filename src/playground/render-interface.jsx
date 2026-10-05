@@ -134,21 +134,21 @@ const Footer = () => (
                         {/* Do not translate */}
                         {'SpinachMod Packager'}
                     </a>
-                    <a href="https://docs.nitrobolt.org/website/embedding">
+                    <a href="https://spinachmod.github.io/website/embedding">
                         <FormattedMessage
                             defaultMessage="Embedding"
                             description="Link in footer to embedding documentation for embedding link"
                             id="tw.footer.embed"
                         />
                     </a>
-                    <a href="https://docs.nitrobolt.org/website/url-parameters">
+                    <a href="https://spinachmod.github.io/website/url-parameters">
                         <FormattedMessage
                             defaultMessage="URL Parameters"
                             description="Link in footer to URL parameters documentation"
                             id="tw.footer.parameters"
                         />
                     </a>
-                    <a href="https://docs.nitrobolt.org/">
+                    <a href="https://spinachmod.github.io">
                         <FormattedMessage
                             defaultMessage="Documentation"
                             description="Link in footer to additional documentation"
