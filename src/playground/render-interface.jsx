@@ -41,13 +41,13 @@ import {isBrowserSupported} from '../lib/tw-environment-support-prober';
 import AddonChannels from '../addons/channels';
 import {loadServiceWorker} from './load-service-worker';
 import runAddons from '../addons/entry';
-import {APP_NAME, APP_MOTTO} from '../lib/brand.js';
+import {APP_NAME, APP_MOTTO} from '../lib/brand.js'
 
 import styles from './interface.css';
 
 const messages = defineMessages({
     defaultTitle: {
-        defaultMessage: 'Into the The World of Fun and Games!', // TODO: Temporary?
+        defaultMessage: 'Into the World of Fun and Games!', // TODO: Temporary?
         description: 'Title of homepage',
         id: 'tw.guiDefaultTitle'
     }
@@ -134,21 +134,21 @@ const Footer = () => (
                         {/* Do not translate */}
                         {'SpinachMod Packager'}
                     </a>
-                    <a href="https://spinachmod.github.io/website/embedding">
+                    <a href="https://spinachmod.github.io/docs/website/embedding">
                         <FormattedMessage
                             defaultMessage="Embedding"
                             description="Link in footer to embedding documentation for embedding link"
                             id="tw.footer.embed"
                         />
                     </a>
-                    <a href="https://spinachmod.github.io/website/url-parameters">
+                    <a href="https://spinachmod.github.io/docs/website/url-parameters">
                         <FormattedMessage
                             defaultMessage="URL Parameters"
                             description="Link in footer to URL parameters documentation"
                             id="tw.footer.parameters"
                         />
                     </a>
-                    <a href="https://spinachmod.github.io">
+                    <a href="https://spinachmod.github.io/docs">
                         <FormattedMessage
                             defaultMessage="Documentation"
                             description="Link in footer to additional documentation"
@@ -157,7 +157,7 @@ const Footer = () => (
                     </a>
                 </div>
                 <div className={styles.footerSection}>
-                    <a href="https://www.facebook.com/CrystalMae1990">
+                    <a href="https://facebook.com/CrystalMae1990">
                         <FormattedMessage
                             defaultMessage="Feedback & Bugs"
                             description="Link to feedback/bugs page"
@@ -257,54 +257,6 @@ class Interface extends React.Component {
                             <div className={styles.section}>
                                 <ProjectInput />
                             </div>
-                            {(
-                                // eslint-disable-next-line max-len
-                                description.instructions === 'unshared' || description.credits === 'unshared'
-                            ) && (
-                                <div className={classNames(styles.infobox, styles.unsharedUpdate)}>
-                                    <p>
-                                        <FormattedMessage
-                                            defaultMessage="Unshared projects are no longer visible."
-                                            description="Appears on unshared projects"
-                                            id="tw.unshared2.1"
-                                        />
-                                    </p>
-                                    <p>
-                                        <FormattedMessage
-                                            defaultMessage="For more information, visit: {link}"
-                                            description="Appears on unshared projects"
-                                            id="tw.unshared.2"
-                                            values={{
-                                                link: (
-                                                    <a
-                                                        href="https://docs.turbowarp.org/unshared-projects"
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                    >
-                                                        {'https://docs.turbowarp.org/unshared-projects'}
-                                                    </a>
-                                                )
-                                            }}
-                                        />
-                                    </p>
-                                    <p>
-                                        <FormattedMessage
-                                            // eslint-disable-next-line max-len
-                                            defaultMessage="If the project was shared recently, this message may appear incorrectly for a few minutes."
-                                            description="Appears on unshared projects"
-                                            id="tw.unshared.cache"
-                                        />
-                                    </p>
-                                    <p>
-                                        <FormattedMessage
-                                            // eslint-disable-next-line max-len
-                                            defaultMessage="If this project is actually shared, please report a bug."
-                                            description="Appears on unshared projects"
-                                            id="tw.unshared.bug"
-                                        />
-                                    </p>
-                                </div>
-                            )}
                             {hasCloudVariables && projectId !== '0' && (
                                 <div className={styles.section}>
                                     <CloudVariableBadge />
@@ -323,7 +275,7 @@ class Interface extends React.Component {
                                 <p>
                                     <FormattedMessage
                                         // eslint-disable-next-line max-len
-                                        defaultMessage="{APP_NAME} is a NitroBolt and TurboWarp mod with many changes that builds upon and enhances NitroBolt with many useful features. We do not guarantee projects made here will be backwards compatible with Scratch or TurboWarp."
+                                        defaultMessage="{APP_NAME} is a NitroBolt mod with many changes that builds upon and enhances NitroBolt with many useful features. We do not guarantee projects made here will be backwards compatible with Scratch or TurboWarp."
                                         description="Description of SpinachMod on the homepage"
                                         id="tw.home.description"
                                         values={{
@@ -333,7 +285,7 @@ class Interface extends React.Component {
                                 </p>
                             </div>
                             <div className={styles.section}>
-                                <FeaturedProjects studio="27205657" />
+                                <FeaturedProjects studio="50866201" />
                             </div>
                         </React.Fragment>
                     ) : null}
